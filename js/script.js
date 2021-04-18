@@ -1,23 +1,21 @@
 "use strict";
 
-// alert('hello');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// const result = confirm('Are you here?');
-// console.log(result);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// const answer = prompt('Are you 18?', '');
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
-const answers = [];
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-answers[0] = prompt('What is your name?', '');
-answers[1] = prompt('What is your surname?', '');
-answers[2] = prompt('How old are you?', '');
-
-document.write(answers);
-
-console.log(2*4 === '8');
-
-&& //AND
-|| //OR
-! //оператор отрицания - переварачивает значение на противоположное
-!= //not equal
+console.log(personalMovieDB);
