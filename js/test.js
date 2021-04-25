@@ -31,3 +31,16 @@ for (let key in options) {
 }
 
 console.log(Object.keys(options).length); //выводит массив из ключей в обьекте
+
+const arr = [2, 3, 5, 6, 10];
+
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+});
+
+// arr.pop(); //removes last element of the arr
+// arr.push(15); //add element to the end of the array
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
