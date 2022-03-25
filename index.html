@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     
-    <p>Hello World!</p>
+    
+    <header>
+        <div class="container">
+            <h1>Free Dictionary API</h1>
+            <div class="input-items">
+                <input type="text" id="word-field" placeholder="Enter an english word">
+                <input type="button" value="search" id="btn-search">
+            </div>
+        </div>
+    </header>
 
-
-    <script src="js/script.js"></script>
+    <div class="container placeholder"></div>
+    <script src="./script.js"></script>
 </body>
 </html>
